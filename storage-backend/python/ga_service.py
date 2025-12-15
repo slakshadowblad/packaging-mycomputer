@@ -43,10 +43,10 @@ def run_ga_packing(container_data: Dict, items_data: List[Dict], groups_data: Li
             container=container,
             constraints=constraints,
             population_size=500,
-            generations=50,
-            mutation_rate=0.4,
+            generations=100,
+            mutation_rate=0.3,
             crossover_rate=0.9,
-            elitism_count=5
+            elitism_count=10
         )
         
         raw_result = ga.run()
